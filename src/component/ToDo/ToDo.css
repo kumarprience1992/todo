@@ -1,0 +1,66 @@
+:root {
+  --even: rgb(215, 211, 211);
+  --odd: rgb(188, 233, 245);
+  --close: red;
+}
+
+.todo {
+  margin-top: 50px;
+}
+
+.todo button {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.todo input {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.list {
+  margin: 50px auto;
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+  border: 1px double black;
+  border-radius: 50px;
+  box-shadow: 10px 10px rgb(196, 200, 201);
+}
+
+.list h2 {
+  text-align: center;
+}
+
+.list .list-item {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.list .list-item:nth-child(even) {
+  background-color: var(--even);
+  padding: 5px 20px;
+}
+
+.list .list-item:nth-child(odd) {
+  background-color: var(--odd);
+  padding: 5px 20px;
+}
+
+.list .list-item button {
+  float: right;
+  color: var(--close);
+  padding: 0 5px;
+  margin: 0;
+  line-height: 22px;
+  border: 1px dashed var(--close);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
